@@ -1,6 +1,5 @@
-	<script src="<?php echo base_url()?>assets/js/highcharts/highcharts.js"></script>
-	<script src="<?php echo base_url()?>assets/js/highcharts/highcharts-more.js"></script>
-	<script src="<?php echo base_url()?>assets/js/highcharts/exporting.js"></script>
+<?php  if(!defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
 	<script type="text/javascript">
 		$(document).ready(function() {hiRes ();});
 		var chart;

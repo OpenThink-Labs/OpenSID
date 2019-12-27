@@ -1,4 +1,12 @@
-	<p>&copy; 2006-<?php echo date("Y");?> <a target="_blank" href="<?php echo base_url()?>index.php/siteman">Aplikasi Sistem Informasi Desa (SID)</a> yang digunakan dalam situs ini adalah <a target="_blank" href="https://github.com/eddieridwan/OpenSID">OpenSID</a> <?php echo AmbilVersi()?>. <br>
-  Aplikasi ini dikembangkan dari SID yang awalnya dibangun oleh <a target="_blank" href="http://www.combine.or.id">COMBINE Resource Institution</a>.</br>
+<?php  if(!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
-  Sistem ini dikelola dengan merujuk pada lisensi <a target="_blank" href="http://www.gnu.org/licenses/gpl.html"> GNU GENERAL PUBLIC LICENSE Version 3</a></p>
+	<p>
+		&copy; 2016-<?php echo date("Y");?> <a target="_blank" href="https://opendesa.id">OpenDesa</a> <i class="fa fa-circle" style="font-size: smaller;"></i>
+		<a target="_blank" href="https://github.com/OpenSID/OpenSID">OpenSID</a> <?php echo AmbilVersi()?>
+		<br>
+	  <a target="_blank" href="<?php echo base_url()?>index.php/siteman">Aplikasi Sistem Informasi Desa (SID)</a> ini dikembangkan oleh <a target="_blank" href="https://www.facebook.com/groups/OpenSID/">Komunitas OpenSID</a></br>
+
+	  <?php if (file_exists('mitra')): ?>
+	  	Hosting didukung <a target="_blank" href="https://idcloudhost.com"><img src="<?= base_url('/assets/images/Logo-IDcloudhost.png')?>" height='15px' alt="Logo-IDCloudHost" title="Logo-IDCloudHost"></a>
+	  <?php endif; ?>
+	</p>

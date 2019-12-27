@@ -1,13 +1,15 @@
-<link type='text/css' href="<?php echo base_url()?>assets/css/slider.css" rel='Stylesheet' />
+<?php  if(!defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+<link type='text/css' href="<?php echo base_url()?>assets/front/css/slider.css" rel='Stylesheet' />
 <script type="text/javascript">
 	$(document).ready(function() {
     $('.slider').cycle({
-			pauseOnHover: true
+			pauseOnHover: true,
+			// Untuk menghilangkan titik-titik di cycle pager
+			pagerTemplate: '<span></span>'
 		});
 	});
 </script>
-<style type="text/css">
-</style>
 <div class="box">
 	<div class="slider">
     <span class="cycle-prev"><img src="<?php echo base_url()?>assets/images/back_button.png" alt="Back"></span> <!-- Untuk membuat tanda panah di kiri slider -->
